@@ -109,7 +109,7 @@ export function Capabilities() {
             </div>
           ))}
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'none' }}>
           <Link href="/servicos" className="group" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontFamily: 'Barlow, sans-serif', fontSize: '14px', fontWeight: 400, color: '#ffffff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.1em', border: '1px solid rgba(255,255,255,0.4)', borderRadius: '100px', padding: '14px 24px', transition: 'background-color 0.25s, color 0.25s, border-color 0.25s' }} onMouseEnter={e => { e.currentTarget.style.backgroundColor='#ffffff'; e.currentTarget.style.color='#070707'; e.currentTarget.style.borderColor='#ffffff'; }} onMouseLeave={e => { e.currentTarget.style.backgroundColor='transparent'; e.currentTarget.style.color='#ffffff'; e.currentTarget.style.borderColor='rgba(255,255,255,0.4)'; const circle = e.currentTarget.querySelector('.btn-circle') as HTMLElement; if(circle) { circle.style.backgroundColor='transparent'; circle.style.borderColor='rgba(255,255,255,0.4)'; } }}>
             CONHEÇA NOSSOS SERVIÇOS
             <span className="btn-circle" style={{ width: '32px', height: '32px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transition: 'background-color 0.25s, border-color 0.25s' }}
@@ -148,7 +148,7 @@ export function Capabilities() {
             <div key={i} style={{ height: '3px', width: i === activeCard ? '40px' : '24px', backgroundColor: i === activeCard ? '#ffffff' : 'rgba(255,255,255,0.3)', borderRadius: '2px', transition: 'all 300ms ease' }} />
           ))}
         </div>
-        <div style={{ paddingLeft: '24px', paddingRight: '24px', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'none' }}>
           <HoverButton href="/servicos" label="CONHEÇA NOSSOS SERVIÇOS" />
         </div>
       </div>

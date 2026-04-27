@@ -33,7 +33,7 @@ export function Certifications() {
 
       {/* BG esferas desktop */}
       <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '-80px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
-      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '220px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '357px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
       <img src={`${BASE_PATH}/bg-caps-bottom.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, right: '-40px', width: '300px', height: '300px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
 
       {/* BG esferas mobile — duas pela metade na base */}

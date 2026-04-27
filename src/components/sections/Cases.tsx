@@ -176,7 +176,7 @@ export function Cases() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'none' }}>
           <HoverButton label="VER TODOS OS CASES" />
         </div>
 

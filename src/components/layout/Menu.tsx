@@ -17,10 +17,10 @@ interface MenuProps {
 }
 
 const NAV_LINKS = [
-  { label: 'Serviços',  href: '/servicos' },
-  { label: 'Cases',     href: '/cases' },
-  { label: 'A agência', href: '/agencia' },
-  { label: 'Blog',      href: '/blog' },
+  { label: 'Serviços', href: '#capabilities' },
+  { label: 'Clientes', href: '#clients' },
+  { label: 'Cases',    href: '#cases' },
+  { label: 'Contato',  href: '#contact' },
 ]
 
 export function Menu({ variant = 'sem-fundo', isHomePage = false }: MenuProps) {
@@ -126,13 +126,18 @@ export function Menu({ variant = 'sem-fundo', isHomePage = false }: MenuProps) {
             <div className="hidden lg:flex items-center gap-4">
               {/* Seletor de idioma */}
               <div className="flex items-center gap-2 text-[14px] font-sans text-white/60">
-                <button className="font-extrabold text-white uppercase tracking-[0.08em] transition-opacity hover:opacity-60">
+                <button
+                  className="font-extrabold text-white uppercase tracking-[0.08em] transition-opacity hover:opacity-60"
+                  onClick={() => (window as any).setLanguage && (window as any).setLanguage('pt')}>
                   PT
                 </button>
                 <span className="text-white/30">|</span>
-                <button className="font-normal uppercase tracking-[0.08em] transition-opacity hover:opacity-60">
+                <button
+                  className="font-normal uppercase tracking-[0.08em] transition-opacity hover:opacity-60"
+                  onClick={() => (window as any).setLanguage && (window as any).setLanguage('en')}>
                   EN
                 </button>
+                <div id="google_translate_element" />
               </div>
 
               <Button variant="primary" size="sm" label="Contato" />

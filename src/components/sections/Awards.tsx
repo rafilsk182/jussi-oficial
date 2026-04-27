@@ -147,11 +147,11 @@ export function Awards() {
 
         {/* Botão centralizado */}
         {/* Botão desktop centralizado */}
-        <div className="hidden lg:flex" style={{ justifyContent: 'center' }}>
+        <div className="hidden" style={{ justifyContent: 'center' }}>
           <HoverButton />
         </div>
         {/* Botão mobile full-width */}
-        <div className="lg:hidden">
+        <div className="hidden">
           <HoverButtonMobile />
         </div>
 

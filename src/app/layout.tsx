@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Barlow } from 'next/font/google'
 import '@/styles/globals.css'
 
@@ -65,7 +66,52 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={barlow.variable}>
-      <body>{children}</body>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame, .skiptranslate { display: none !important; }
+          body { top: 0 !important; }
+          #google_translate_element { display: none; }
+        `}} />
+      </head>
+      <body>
+        {children}
+        <Script id="google-translate-init" strategy="afterInteractive">{`
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+              pageLanguage: 'pt',
+              includedLanguages: 'en',
+              autoDisplay: false
+            }, 'google_translate_element');
+          }
+          window.setLanguage = function(lang) {
+            if (lang === 'pt') {
+              // Voltar ao português original
+              var frame = document.querySelector('.goog-te-banner-frame');
+              if (frame) {
+                var restore = frame.contentDocument.querySelector('.goog-te-banner-restore');
+                if (restore) { restore.click(); return; }
+              }
+              // Fallback: usar cookie do Google Translate
+              var expires = new Date();
+              expires.setFullYear(expires.getFullYear() - 1);
+              document.cookie = 'googtrans=; expires=' + expires.toUTCString() + '; path=/';
+              document.cookie = 'googtrans=; expires=' + expires.toUTCString() + '; path=/; domain=' + location.hostname;
+              location.reload();
+            } else {
+              var select = document.querySelector('#google_translate_element select');
+              if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event('change'));
+              }
+            }
+          }
+        `}</Script>
+        <Script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+        <div id="google_translate_element" style={{ display: 'none' }} />
+      </body>
     </html>
   )
 }
