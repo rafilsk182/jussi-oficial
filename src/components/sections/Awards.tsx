@@ -5,22 +5,22 @@ import { useEffect, useRef, useState } from 'react'
 
 const AWARDS = [
   {
-    logo: '/awards/effie.svg',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/awards/effie.svg`,
     title: 'Effie Awards Brasil',
     desc: 'Lorem Ipsum met dolor cops lorem ipsum.',
   },
   {
-    logo: '/awards/rankmyapp.svg',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/awards/rankmyapp.svg`,
     title: 'Prêmio RankMyAds',
     desc: 'Estratégia de crescimento sustentável em aquisição de Leads',
   },
   {
-    logo: '/awards/mma.svg',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/awards/mma.svg`,
     title: 'MMA Smarties 2025',
     desc: 'Única agência premiada na categoria Retail Media no ano.',
   },
   {
-    logo: '/awards/tiktok.svg',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/awards/tiktok.svg`,
     title: 'TikTok Ad Awards Brasil',
     desc: '"O som tá on" – Melhor Uso de Som.',
   },

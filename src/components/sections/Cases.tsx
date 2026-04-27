@@ -5,25 +5,25 @@ import { useEffect, useRef, useState } from 'react'
 
 const CASES = [
   {
-    img: '/cases/case-01.png',
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cases/case-01.png`,
     category: 'LOREM IPSUM',
     title: 'PASCOA LACTA',
     hoverText: 'Crescimento de 40% em receita em relação a 2024.',
   },
   {
-    img: '/cases/case-02.png',
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cases/case-02.png`,
     category: 'LOREM IPSUM',
     title: 'POTBELLY SANDWICH SHOP',
     hoverText: 'Atuação de AEO/GEO com ganho exponencial de receita originadas de IA.',
   },
   {
-    img: '/cases/case-03.png',
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cases/case-03.png`,
     category: 'LOREM IPSUM',
     title: 'CARNAVAL TRIDENT',
     hoverText: 'Ativações em digital que geraram resultados efetivos de venda.',
   },
   {
-    img: '/cases/case-04.png',
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cases/case-04.png`,
     category: 'LOREM IPSUM',
     title: 'CAMINHÃO DA DEDICAÇÃO CASAS BA...',
     hoverText: 'Mais de 288 milhões de impactos nas redes sociais.',

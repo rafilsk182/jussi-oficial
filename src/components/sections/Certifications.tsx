@@ -4,15 +4,15 @@ import { BASE_PATH } from '@/lib/basePath'
 import { useEffect, useRef, useState } from 'react'
 
 const CERTS = [
-  { img: '/certs/cert-01.png', label: 'Certificado Media Buying Professional' },
-  { img: '/certs/cert-02.png', label: 'Certificado Marketing Developer' },
-  { img: '/certs/cert-03.png', label: 'VTEX Partner Gold' },
-  { img: '/certs/cert-04.png', label: 'Google Partner Premier 2023' },
-  { img: '/certs/cert-05.png', label: 'Salesforce Summit Partner' },
-  { img: '/certs/cert-06.png', label: 'Certificado Media Buying Professional' },
-  { img: '/certs/cert-07.png', label: 'Certificado Marketing Developer' },
-  { img: '/certs/cert-08.png', label: 'VTEX Partner Gold' },
-  { img: '/certs/cert-09.png', label: 'Google Partner Premier 2023' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-01.png`, label: 'Certificado Media Buying Professional' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-02.png`, label: 'Certificado Marketing Developer' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-03.png`, label: 'VTEX Partner Gold' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-04.png`, label: 'Google Partner Premier 2023' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-05.png`, label: 'Salesforce Summit Partner' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-06.png`, label: 'Certificado Media Buying Professional' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-07.png`, label: 'Certificado Marketing Developer' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-08.png`, label: 'VTEX Partner Gold' },
+  { img: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/certs/cert-09.png`, label: 'Google Partner Premier 2023' },
 ]
 
 export function Certifications() {

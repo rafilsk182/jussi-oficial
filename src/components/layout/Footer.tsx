@@ -28,10 +28,10 @@ const NAV_LINKS = [
 ]
 
 const SOCIAL = [
-  { href: 'https://instagram.com/jussi', icon: '/social/instagram.svg', label: 'Instagram' },
-  { href: 'https://linkedin.com/company/jussi', icon: '/social/linkedin.svg', label: 'LinkedIn' },
-  { href: 'https://open.spotify.com/jussi', icon: '/social/spotify.svg', label: 'Spotify' },
-  { href: 'https://medium.com/jussi', icon: '/social/medium.svg', label: 'Medium' },
+  { href: 'https://instagram.com/jussi', icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/social/instagram.svg`, label: 'Instagram' },
+  { href: 'https://linkedin.com/company/jussi', icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/social/linkedin.svg`, label: 'LinkedIn' },
+  { href: 'https://open.spotify.com/jussi', icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/social/spotify.svg`, label: 'Spotify' },
+  { href: 'https://medium.com/jussi', icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/social/medium.svg`, label: 'Medium' },
 ]
 
 function ArrowButton() {
