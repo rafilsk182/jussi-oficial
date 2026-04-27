@@ -12,7 +12,7 @@ const CARDS = [
   { num: '06', category: 'MÍDIA & PERFORMANCE', title: 'INTELIGÊNCIA DE MÍDIA', desc: 'Planejamento, dados e performance para maximizar eficiência de mídia e acelerar crescimento.', tags: ['LOREM', 'IPSUM', 'LOREM'] },
 ]
 
-function Tags({ tags }) {
+function Tags({ tags }: { tags: string[] }) {
   return (
     <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
       {tags.map((tag, j) => (
