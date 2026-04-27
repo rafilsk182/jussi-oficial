@@ -15,10 +15,10 @@ export function Hero() {
     <section ref={heroRef} id='hero' className='relative w-full flex flex-col' style={{ height: '100dvh' }}>
       <div className='absolute inset-0 z-0 bg-black'>
         <video autoPlay loop muted playsInline className='absolute inset-0 w-full h-full object-cover hidden lg:block'>
-          <source src=`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/hero_desktop.mp4` type='video/mp4' />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/hero_desktop.mp4`} type='video/mp4' />
         </video>
         <video autoPlay loop muted playsInline className='absolute inset-0 w-full h-full object-cover lg:hidden'>
-          <source src=`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/hero_mobile.mp4` type='video/mp4' />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/hero_mobile.mp4`} type='video/mp4' />
         </video>
         <div className='absolute inset-0' style={{ backgroundColor: 'rgba(0,0,0,0.65)' }} />
       </div>
