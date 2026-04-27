@@ -30,17 +30,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://jussi.com.br',
+    url: 'https://rafilsk182.github.io/jussi-oficial/',
     siteName: 'Jüssi',
     title: 'Jüssi – The Experience Agency',
-    description:
-      'Conectando criatividade, tecnologia e dados para acelerar negócios.',
+    description: 'Conectando criatividade, tecnologia e dados para acelerar negócios.',
+    images: [{ url: 'https://rafilsk182.github.io/jussi-oficial/og-image.png', width: 1200, height: 630, alt: 'Jüssi – The Experience Agency' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Jüssi – The Experience Agency',
-    description:
-      'Conectando criatividade, tecnologia e dados para acelerar negócios.',
+    description: 'Conectando criatividade, tecnologia e dados para acelerar negócios.',
+    images: ['https://rafilsk182.github.io/jussi-oficial/og-image.png'],
   },
   robots: {
     index: false,
