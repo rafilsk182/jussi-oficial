@@ -1,4 +1,5 @@
 'use client'
+import { BASE_PATH } from '@/lib/basePath'
 
 import { useEffect, useRef, useState } from 'react'
 
@@ -44,14 +45,14 @@ export function Hero() {
           autoPlay loop muted playsInline
           className="absolute inset-0 w-full h-full object-cover hidden lg:block"
         >
-          <source src="/videos/hero_desktop.mp4" type="video/mp4" />
+          <source src={`${BASE_PATH}/videos/hero_desktop.mp4`} type="video/mp4" />
         </video>
         {/* Vídeo mobile */}
         <video
           autoPlay loop muted playsInline
           className="absolute inset-0 w-full h-full object-cover lg:hidden"
         >
-          <source src="/videos/hero_mobile.mp4" type="video/mp4" />
+          <source src={`${BASE_PATH}/videos/hero_mobile.mp4`} type="video/mp4" />
         </video>
         {/* Overlay preto 65% — Rectangle 53 do Figma */}
         <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.65)' }} />

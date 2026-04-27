@@ -1,4 +1,5 @@
 'use client'
+import { BASE_PATH } from '@/lib/basePath'
 
 import React from 'react'
 import Link from 'next/link'
@@ -208,7 +209,7 @@ export function Footer() {
                 Cookies
               </Link>
             </div>
-            <img src="/wpp-logo.png" alt="WPP" style={{ height: '21px', width: 'auto' }} />
+            <img src={`${BASE_PATH}/wpp-logo.png`} alt="WPP" style={{ height: '21px', width: 'auto' }} />
           </div>
         </div>
       </div>

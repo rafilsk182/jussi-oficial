@@ -1,4 +1,5 @@
 'use client'
+import { BASE_PATH } from '@/lib/basePath'
 
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
@@ -74,10 +75,10 @@ export function Capabilities() {
   }, [])
   return (
     <section ref={sectionRef} id="capabilities" className="w-full" style={{ opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(32px)', transition: 'opacity 700ms ease, transform 700ms ease', backgroundColor: '#111010', position: 'relative', overflow: 'hidden' }}>
-      <img src="/bg-caps-top.png" alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', top: 0, left: 0, width: '413px', height: '414px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
-      <img src="/bg-caps-bottom.png" alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, right: 0, width: '577px', height: '578px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
-      <img src="/bg-caps-top.png" alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', top: '10vw', left: '-15vw', width: '60vw', height: '60vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.55 }} />
-      <img src="/bg-caps-bottom.png" alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-5vw', right: '-15vw', width: '70vw', height: '70vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.55 }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', top: 0, left: 0, width: '413px', height: '414px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-bottom.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, right: 0, width: '577px', height: '578px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', top: '10vw', left: '-15vw', width: '60vw', height: '60vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.55 }} />
+      <img src={`${BASE_PATH}/bg-caps-bottom.png`} alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-5vw', right: '-15vw', width: '70vw', height: '70vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.55 }} />
       <div className="lg:hidden" style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(7,7,7,0.75)', zIndex: 0, pointerEvents: 'none' }} />
 
       <div className="hidden lg:flex flex-col container-jussi py-24 gap-16" style={{ position: 'relative', zIndex: 1 }}>

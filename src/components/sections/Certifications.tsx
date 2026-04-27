@@ -1,4 +1,5 @@
 'use client'
+import { BASE_PATH } from '@/lib/basePath'
 
 import { useEffect, useRef, useState } from 'react'
 
@@ -31,13 +32,13 @@ export function Certifications() {
     <section ref={ref} id="certifications" className="w-full" style={{ backgroundColor: '#070707', position: 'relative', overflow: 'hidden', opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(32px)', transition: 'opacity 700ms ease, transform 700ms ease' }}>
 
       {/* BG esferas desktop */}
-      <img src="/bg-caps-top.png" alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '-80px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
-      <img src="/bg-caps-top.png" alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '220px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
-      <img src="/bg-caps-bottom.png" alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, right: '-40px', width: '300px', height: '300px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '-80px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, left: '220px', width: '340px', height: '340px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-bottom.png`} alt="" aria-hidden="true" className="hidden lg:block" style={{ position: 'absolute', bottom: 0, right: '-40px', width: '300px', height: '300px', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.7, mixBlendMode: 'screen' }} />
 
       {/* BG esferas mobile — duas pela metade na base */}
-      <img src="/bg-caps-top.png" alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-40px', left: '-40px', width: '55vw', height: '55vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.6, mixBlendMode: 'screen' }} />
-      <img src="/bg-caps-bottom.png" alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-40px', right: '-40px', width: '55vw', height: '55vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.6, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-top.png`} alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-40px', left: '-40px', width: '55vw', height: '55vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.6, mixBlendMode: 'screen' }} />
+      <img src={`${BASE_PATH}/bg-caps-bottom.png`} alt="" aria-hidden="true" className="lg:hidden" style={{ position: 'absolute', bottom: '-40px', right: '-40px', width: '55vw', height: '55vw', objectFit: 'cover', pointerEvents: 'none', zIndex: 0, opacity: 0.6, mixBlendMode: 'screen' }} />
 
       <div className="container-jussi py-20 flex flex-col gap-16" style={{ position: 'relative', zIndex: 1 }}>
 

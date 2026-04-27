@@ -1,4 +1,5 @@
 'use client'
+import { BASE_PATH } from '@/lib/basePath'
 
 import { useEffect, useRef, useState } from 'react'
 
@@ -47,16 +48,16 @@ export function Contact() {
                 <span style={{ fontFamily: 'Barlow, sans-serif', fontSize: '16px', fontWeight: 400, color: '#c3c3c3', textTransform: 'uppercase', letterSpacing: '0.08em' }}>SIGA A JUSSI</span>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
                   <a href="https://instagram.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '44px', height: '44px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/instagram.svg" alt="Instagram" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/instagram.svg`} alt="Instagram" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://linkedin.com/company/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '44px', height: '44px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/linkedin.svg" alt="LinkedIn" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/linkedin.svg`} alt="LinkedIn" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://open.spotify.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '44px', height: '44px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/spotify.svg" alt="Spotify" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/spotify.svg`} alt="Spotify" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://medium.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '44px', height: '44px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/medium.svg" alt="Medium" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/medium.svg`} alt="Medium" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                 </div>
               </div>
@@ -119,16 +120,16 @@ export function Contact() {
                 <span style={{ fontFamily: 'Barlow, sans-serif', fontSize: '13px', fontWeight: 400, color: '#c3c3c3', textTransform: 'uppercase', letterSpacing: '0.08em' }}>SIGA A JUSSI</span>
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                   <a href="https://instagram.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/instagram.svg" alt="Instagram" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/instagram.svg`} alt="Instagram" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://linkedin.com/company/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/linkedin.svg" alt="LinkedIn" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/linkedin.svg`} alt="LinkedIn" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://open.spotify.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/spotify.svg" alt="Spotify" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/spotify.svg`} alt="Spotify" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                   <a href="https://medium.com/jussi" target="_blank" rel="noopener" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)' }}>
-                    <img src="/social/medium.svg" alt="Medium" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
+                    <img src={`${BASE_PATH}/social/medium.svg`} alt="Medium" style={{ width: '18px', height: '18px', filter: 'brightness(0) invert(1)' }} />
                   </a>
                 </div>
               </div>
